@@ -3,9 +3,9 @@ import java.util.Arrays;
 
 class Bsearch {
     public static void main(String[] args) {
-        Scanner h = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.print("Enter size of array: ");
-        int n = h.nextInt();
+        int n = s.nextInt();
 
         int[] arr = new int[n];
         System.out.println("Enter " + n + " elements (sorted for binary search):");
@@ -13,7 +13,7 @@ class Bsearch {
             arr[i] = h.nextInt();
         }
         System.out.print("Enter key to search: ");
-        int key = h.nextInt();
+        int key = s.nextInt();
 
         int result = Arrays.binarySearch(arr, key);
         System.out.println(result);
